@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sump math - the pit names the liters, the liters name the pump, and the outage names the backup</title>
+<style>
+  :root { --accent: #3f4a56; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #f4f6f8; color: #24282c; line-height: 1.55; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2.4rem; margin: 0 0 12px; color: var(--accent); }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 10px 0 8px; padding: 12px 22px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 6px; font-size: 1.05rem; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .norms { background: #fff; border: 1px solid #d8dfe6; border-left: 4px solid var(--accent); border-radius: 6px; padding: 14px 18px; margin-top: 12px; }
+  footer { max-width: 720px; margin: 0 auto; padding: 0 20px 40px; font-size: 0.85rem; color: #98a2ab; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sump math</h1>
+  <p>Sump season goes wrong in three places: the pit guessed by its echo instead of measured by its rise, the pump bought by its box number instead of by the storm it will actually see, and the backup imagined as a detail instead of priced in liters. Sump math turns the pit into the liters, turns the liters into the pump's share of the work, and turns the outage into the backup's job. Exact arithmetic, every borrowed number labeled.</p>
+  <a class="cta" href="app.html">Open the calculators</a>
+  <h2>The three tools</h2>
+  <ul>
+    <li><strong>Pit plan</strong> - the pit diameter and the rise between cycles become the liters of one cycle.</li>
+    <li><strong>Storm plan</strong> - the liters and the cycles an hour become the pump's share of the storm.</li>
+    <li><strong>Backup plan</strong> - the flow and the outage hours become the liters the backup has to move.</li>
+  </ul>
+  <h2>Labeled norms</h2>
+  <div class="norms">
+    Labeled norms: a 2000 L/h pump, a 4000 L battery backup and a 1000 L short watch - all illustrative defaults you can change by measuring. A sump is a pump, a check valve and a discharge line; the math sizes the pump, not the waterproofing. Water and electricity share no room: a GFCI outlet, a tested backup, and a plumber for anything that surprises you.
+  </div>
+</main>
+<footer>Built by the app factory. <a href="https://github.com/iLanis-agent/sumpmath">Source on GitHub</a></footer>
+</body>
+</html>
